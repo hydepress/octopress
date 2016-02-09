@@ -12,10 +12,10 @@ author:
 collections:
   ch1:
     output: false
-#  ch2:
-#    output: false
-#  ch3:
-#    output: false
+  ch2:
+    output: false
+  ch3:
+    output: false
 #  ch4:
 #    output: false
 #  ch5:

@@ -34,6 +34,14 @@ Contents
     </ul>
   </li>
 
+  <li>Goodies
+    <ul>
+      {% for chapter in site.ch3 %}
+        <li>{{ chapter.title }}</li>
+      {% endfor %}
+    </ul>
+  </li>
+
 </ul>
 </div>
 
@@ -92,6 +100,14 @@ Thanks to Brandon Mathis and all Octopress contributors for making it all possib
 </div>
 {% endfor %}
 
+<h2>III. Goodies</h2>
+
+{% for chapter in site.ch3 %}
+<div class='chapter'>
+  <h2>{{ chapter.title }}</h2>
+  {{ chapter.content }}
+</div>
+{% endfor %}
 
 
 
