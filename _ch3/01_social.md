@@ -90,6 +90,7 @@ To use Twitter's fancy buttons you'll need to add this tag to your site's layout
 ```
 
 Sharing tags:
+
 ```
 {% raw %}
 {% tweet_button %}
