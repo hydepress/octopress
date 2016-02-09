@@ -50,6 +50,14 @@ Contents
     </ul>
   </li>
 
+  <li>Miscellaneous
+    <ul>
+      {% for chapter in site.ch5 %}
+        <li>{{ chapter.title }}</li>
+      {% endfor %}
+    </ul>
+  </li>
+
 </ul>
 </div>
 
@@ -120,6 +128,15 @@ Thanks to Brandon Mathis and all Octopress contributors for making it all possib
 <h2>IV. Themes</h2>
 
 {% for chapter in site.ch4 %}
+<div class='chapter'>
+  <h2>{{ chapter.title }}</h2>
+  {{ chapter.content }}
+</div>
+{% endfor %}
+
+<h2>V. Miscellaneous</h2>
+
+{% for chapter in site.ch5 %}
 <div class='chapter'>
   <h2>{{ chapter.title }}</h2>
   {{ chapter.content }}
