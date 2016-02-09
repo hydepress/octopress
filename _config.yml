@@ -16,8 +16,8 @@ collections:
     output: false
   ch3:
     output: false
-#  ch4:
-#    output: false
+  ch4:
+    output: false
 #  ch5:
 #    output: false
 #  ch6:
