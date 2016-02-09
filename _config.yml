@@ -1,0 +1,47 @@
+###########
+# site.title, site.author.name
+
+title:  "Octopress 3 Documentation (Book Edition)"
+author:
+  name: "Brandon Mathis et al"
+
+
+########
+# more settings
+
+collections:
+  ch1:
+    output: false
+#  ch2:
+#    output: false
+#  ch3:
+#    output: false
+#  ch4:
+#    output: false
+#  ch5:
+#    output: false
+#  ch6:
+#    output: false
+
+
+
+# markdown: kramdown
+
+#kramdown:
+#  input: GFM
+#  hard_wrap: false
+#  auto_ids: true
+
+sass:
+  sass_dir: css
+  style: expanded
+
+
+exclude:
+- README.md
+- .gitignore
+- Gemfile
+- Gemfile.lock
+
+# safe: true
+# lsi: false

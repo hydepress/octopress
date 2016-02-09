@@ -1,0 +1,88 @@
+---
+layout: default 
+---
+
+<!-- cover -->
+
+Jekyll's Ferrari
+
+<h1>{{ site.title }}</h1>
+<h3>by {{ site.author.name }}</h3>
+
+<p>An obsessively designed toolkit for writing and deploying Jekyll blogs. </p>
+
+<!-- table of contents -->
+
+<div class='toc'>
+
+Contents
+
+<ul>
+  <li>Getting Started
+    <ul>
+      {% for chapter in site.ch1 %}
+        <li>{{ chapter.title }}</li>
+      {% endfor %}
+    </ul>
+  </li>
+
+  <li>Tags
+    <ul>
+      {% for chapter in site.ch2 %}
+        <li>{{ chapter.title }}</li>
+      {% endfor %}
+    </ul>
+  </li>
+
+</ul>
+</div>
+
+
+<h2>Preface</h1>
+
+<p>
+<b>Note:</b> The book edition is still an early release and a work-in-progess.
+</p>
+
+<p>
+This is the documentation (mostly READMEs) for Octopress 3 - a toolkit for the
+Jekyll static site builder / generator -
+reformatted in a single-page book edition.
+</p>
+
+<p>See the <a href="https://github.com/planetjekyll/octopress">source repo</a> for how
+the book gets auto-built with "plain" Jekyll - of course - and hosted on GitHub Pages.
+</p>
+
+<p>
+Questions? Comments? Send them to the Jekyll Talk forum post
+titled <a href="https://talk.jekyllrb.com/t/jekyll-plugins-tools-readmes-reformatted-as-a-single-page-in-black-n-white-book-version/1916">Jekyll Plugins 'n' Tools READMEs Reformatted as a Single Page in Black 'n' White (Book Version)</a>. 
+</p>
+
+<p>
+Onwards.
+</p>
+
+
+<h2>Acknowledgments</h2>
+
+<p>
+Thanks to all Octopress contributors for making it all possible.
+</p>
+
+
+<!-- chapters -->
+
+<h2>I. Getting Started</h2>
+
+{% for chapter in site.ch1 %}
+<div class='chapter'>
+  <h2>{{ chapter.title }}</h2>
+  {{ chapter.content }}
+</div>
+{% endfor %}
+
+
+<h2>II. Tags</h2>
+
+
