@@ -67,7 +67,7 @@ Onwards.
 <h2>Acknowledgments</h2>
 
 <p>
-Thanks to all Octopress contributors for making it all possible.
+Thanks to Brandon Mathis and all Octopress contributors for making it all possible.
 </p>
 
 
@@ -84,5 +84,14 @@ Thanks to all Octopress contributors for making it all possible.
 
 
 <h2>II. Tags</h2>
+
+{% for chapter in site.ch2 %}
+<div class='chapter'>
+  <h2>{{ chapter.title }}</h2>
+  {{ chapter.content }}
+</div>
+{% endfor %}
+
+
 
 
